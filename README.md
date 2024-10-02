@@ -37,17 +37,18 @@ Key Words: Waste, Rembg, Gray Level Co-Occurence Matrix, Histogram of Oriented G
 
 ## Dataset
 
-This project used the TrashNet dataset with six classes: glass, paper, cardboard, plastic, metal, and trash. The dataset consists of 2527 images. 
+This project used the TrashNet dataset with six classes: glass, paper, cardboard, plastic, metal, and trash. The dataset consists of 2527 images. For this project the dataset was divided into three classes only: landfill, paper, and recyclable.
 
-Then a new sets of data was created using Rembg library to remove backgrounds from all of the images in TrashNet. When using Rembg, there was challenges when it came to TrashNet's images:
+Then a new sets of data was created using [Rembg library](https://github.com/danielgatis/rembg) by Daniel Gatis to remove backgrounds from all of the images in TrashNet. When using Rembg, there was challenges when it came to TrashNet's images:
 - Some of the images are not capturing the whole object (e.g. cropped). It led to Rembg failing to retain the object.
 - The object's shadow are visible in some of the images. It led to the shadow being perceived as a part of the object by Rembg.
 To overcame this problem, the images considered as fail were removed from the dataset. In the end, the Rembg dataset consists of 
 
-The original dataset used in this project can be found on Kaggle:
+The original dataset used in this project:
 [TrashNet Dataset](https://github.com/garythung/trashnet)
 
-While the dataset consists of images with background removed are in the [background removed](./rembg-file)
+While the dataset consists of images with background removed could be found on Kaggle:
+[TrashNet Rembg Dataset](https://kaggle.com/datasets/5b2ee735da96d15fef51c812fd68bd7945a92765639f54126bde2af9773090bf)
 
 ## Methodology
 
